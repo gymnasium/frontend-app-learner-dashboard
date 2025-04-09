@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 
 import {
-  AppProvider,
+  // AppProvider,
   PageWrap,
 } from '@edx/frontend-platform/react';
 import store from 'data/store';
@@ -26,8 +26,8 @@ import { configuration } from './config';
 import messages from './i18n';
 
 import NoticesWrapper from './components/NoticesWrapper';
+import { AppProvider, ErrorPage } from '@openedx/gym-frontend/overrides/platform';
 import { LearnerDashboard as App } from '@openedx/gym-frontend/overrides/learner-dashboard';
-import { ErrorPage } from '@openedx/gym-frontend/overrides';
 
 subscribe(APP_READY, () => {
   ReactDOM.render(
